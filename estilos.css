@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+#searchButton, #moveButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#searchButton:hover, #moveButton:hover {
+    background-color: #45a049;
+}
+
+#moveButton {
+    background-color: #008CBA;
+    margin-top: 20px;
+}
+
+#moveButton:hover {
+    background-color: #007B9A;
+}
+
+#imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-item input[type="checkbox"] {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#progressBar {
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 20px;
+    display: none;
+}
+
+#progressBar .progress {
+    width: 0%;
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
